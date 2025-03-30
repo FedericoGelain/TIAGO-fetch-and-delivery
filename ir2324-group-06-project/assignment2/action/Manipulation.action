@@ -1,0 +1,28 @@
+#goal
+#all information regarding the objects found using /tag_detections
+geometry_msgs/Pose[] detections_poses
+int32[] detections_ids
+float64[] detections_qr_size
+
+#all information regarding the object that has to be picked
+geometry_msgs/Pose obj_pose_to_manipulate
+int32 obj_id
+float32 qr_size
+
+#pose of the cylinder in which to place the object
+geometry_msgs/Pose cylinder_pose
+
+#manipulator action: create collision, pick or place
+int8 action
+
+---
+
+#result
+
+#flag to determine finished manipulation
+int8 success
+
+---
+
+#feedback
+string status

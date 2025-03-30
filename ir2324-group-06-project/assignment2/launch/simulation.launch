@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find tiago_iaslab_simulation)/launch/start_simulation.launch">
+    <arg name="world_name" value="ias_lab_room_full_tables"/>
+  </include>
+  <include file="$(find tiago_iaslab_simulation)/launch/apriltag.launch">
+  </include>
+  <include file="$(find tiago_iaslab_simulation)/launch/navigation.launch">
+  </include>
+  <node name ="human_node" pkg="tiago_iaslab_simulation" type="human_node"/>
+  <node name ="assignment1_server" pkg="assignment1" type="assignment1_server"/>
+  <!-- <node name ="robotCamera" pkg="assignment2" type="robotCamera"/> -->
+</launch>

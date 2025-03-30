@@ -1,0 +1,20 @@
+#goal
+#id of the desired object
+int32 service_id
+
+---
+
+#result
+geometry_msgs/Pose[] detections_poses
+int32[] detections_ids
+float64[] detections_qr_size
+
+int8 object_found
+geometry_msgs/Pose obj_pose_to_pick
+int32 obj_id
+float32 qr_size
+
+---
+
+#feedback
+string status

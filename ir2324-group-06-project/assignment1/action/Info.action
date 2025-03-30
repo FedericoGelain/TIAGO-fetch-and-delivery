@@ -1,0 +1,19 @@
+#goal
+#pose of Pose_B
+float32 pose_B_x
+float32 pose_B_y
+float32 pose_B_yaw
+
+#flag to activate the motion control law
+int8 motion_control_law
+---
+
+#result
+#positions of the obstacles
+float32[] obstacles_positions_x
+float32[] obstacles_positions_y
+
+---
+
+#feedback status
+string status
